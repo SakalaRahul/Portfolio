@@ -1,0 +1,29 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="55%" stop-color="#3B2E5C"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <pattern id="grid5" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" fill="url(#g5)"/>
+  <rect width="800" height="450" fill="url(#grid5)"/>
+  <circle cx="700" cy="100" r="130" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="100" cy="370" r="120" fill="rgba(255,255,255,0.04)"/>
+
+  <!-- id card / people icon -->
+  <g transform="translate(300,145)">
+    <rect x="0" y="0" width="200" height="130" rx="16" fill="#F1F5F9"/>
+    <circle cx="55" cy="55" r="26" fill="#8B5CF6"/>
+    <path d="M20 110c0 -25 20 -38 35 -38s35 13 35 38" fill="#8B5CF6"/>
+    <rect x="105" y="35" width="75" height="10" rx="5" fill="#C7BEEB"/>
+    <rect x="105" y="55" width="75" height="10" rx="5" fill="#C7BEEB"/>
+    <rect x="105" y="75" width="55" height="10" rx="5" fill="#C7BEEB"/>
+  </g>
+
+  <text x="400" y="360" font-family="Sora, sans-serif" font-size="28" font-weight="700" fill="#F1F5F9" text-anchor="middle">Employee Management System</text>
+  <text x="400" y="392" font-family="Poppins, sans-serif" font-size="16" fill="#D8CFF6" text-anchor="middle" letter-spacing="2">JAVA &#183; JSP &#183; SERVLETS &#183; JDBC &#183; MYSQL</text>
+</svg>

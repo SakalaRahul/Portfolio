@@ -1,0 +1,28 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="55%" stop-color="#0E4A5C"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <pattern id="grid1" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" fill="url(#g1)"/>
+  <rect width="800" height="450" fill="url(#grid1)"/>
+  <circle cx="680" cy="90" r="140" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="90" cy="380" r="110" fill="rgba(255,255,255,0.04)"/>
+
+  <!-- bed icon -->
+  <g transform="translate(320,140)">
+    <rect x="0" y="90" width="160" height="70" rx="10" fill="#F1F5F9"/>
+    <rect x="0" y="60" width="160" height="35" rx="10" fill="#CBD5E1"/>
+    <rect x="10" y="35" width="50" height="35" rx="8" fill="#06B6D4"/>
+    <rect x="0" y="150" width="14" height="35" fill="#0F172A"/>
+    <rect x="146" y="150" width="14" height="35" fill="#0F172A"/>
+  </g>
+
+  <text x="400" y="360" font-family="Sora, sans-serif" font-size="30" font-weight="700" fill="#F1F5F9" text-anchor="middle">Hotel Room Booking System</text>
+  <text x="400" y="392" font-family="Poppins, sans-serif" font-size="16" fill="#9CDCE8" text-anchor="middle" letter-spacing="2">JAVA &#183; JDBC &#183; MYSQL</text>
+</svg>

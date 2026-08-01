@@ -1,0 +1,25 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="55%" stop-color="#134155"/>
+      <stop offset="100%" stop-color="#0EA5A5"/>
+    </linearGradient>
+    <pattern id="grid3" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" fill="url(#g3)"/>
+  <rect width="800" height="450" fill="url(#grid3)"/>
+  <circle cx="700" cy="90" r="140" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="90" cy="370" r="110" fill="rgba(255,255,255,0.04)"/>
+
+  <!-- medical cross icon -->
+  <g transform="translate(340,140)">
+    <rect x="45" y="0" width="30" height="120" rx="8" fill="#F1F5F9"/>
+    <rect x="0" y="45" width="120" height="30" rx="8" fill="#F1F5F9"/>
+  </g>
+
+  <text x="400" y="360" font-family="Sora, sans-serif" font-size="30" font-weight="700" fill="#F1F5F9" text-anchor="middle">Dhanvantri Pharmacy</text>
+  <text x="400" y="392" font-family="Poppins, sans-serif" font-size="16" fill="#9FE8E0" text-anchor="middle" letter-spacing="2">JAVA &#183; JSP &#183; SERVLETS &#183; JDBC &#183; MYSQL</text>
+</svg>
