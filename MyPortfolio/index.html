@@ -93,7 +93,9 @@
                 </div>
 
                 <div class="col-lg-6 text-center">
-                    <img src="Myphoto11.jpg" class="img-fluid hero-img" alt="Sakala Rahul profile photo">
+                    <div class="hero-img-wrap">
+                        <img src="Myphoto11.jpg" class="img-fluid hero-img" alt="Sakala Rahul profile photo">
+                    </div>
                 </div>
 
             </div>
@@ -114,7 +116,9 @@
             <div class="row align-items-center">
 
                 <div class="col-lg-6 reveal">
-                    <img src="photo1.jpeg" class="img-fluid rounded-4 shadow" alt="Sakala Rahul" style="max-height: 700px;">
+                    <div class="about-img-wrap">
+                        <img src="photo1.jpeg" class="img-fluid rounded-4 shadow about-img" alt="Sakala Rahul" style="max-height: 700px;">
+                    </div>
                 </div>
 
                 <div class="col-lg-6 reveal">
@@ -363,12 +367,11 @@
                             </p>
                             <div class="mb-3 project-tags">
                                 <span class="badge">Java</span>
-                                <span class="badge">JSP</span>
-                                <span class="badge">Servlets</span>
-                                <span class="badge">JDBC</span>
+                                <span class="badge">Spring Boot</span>
                                 <span class="badge">MySQL</span>
+                                <span class="badge">JSP</span>
                             </div>
-                            <a href="https://github.com/SakalaRahul/Dhanvantri-Pharmacy-Management-System" target="_blank" rel="noopener" class="btn-sm-custom">
+                            <a href="https://github.com/SakalaRahul/Dhanvantri_Pharmacy" target="_blank" rel="noopener" class="btn-sm-custom">
                                 <i class="fab fa-github"></i> View on GitHub
                             </a>
                         </div>
@@ -378,19 +381,18 @@
                 <!-- Project 4 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="card portfolio-card h-100">
-                        <img src="banking-management-system.svg" class="card-img-top" alt="Banking Management System">
+                        <img src="dhanvantri-hospital.svg" class="card-img-top" alt="Dhanvantri Hospital Management System">
                         <div class="card-body">
-                            <h4 class="card-title">Banking Management System</h4>
+                            <h4 class="card-title">Dhanvantri Hospital</h4>
                             <p class="card-text">
-                                A core banking application supporting account management, deposits,
-                                withdrawals and transaction history with a MySQL backend.
+                                A hospital management system to manage patient records, appointments and
+                                billing information built with React JS, Axios.
                             </p>
                             <div class="mb-3 project-tags">
-                                <span class="badge">Java</span>
-                                <span class="badge">MySQL</span>
-                                <span class="badge">JDBC</span>
+                                <span class="badge">React JS</span>
+                                <span class="badge">Axios</span>
                             </div>
-                            <a href="https://github.com/SakalaRahul/Banking-Management-System" target="_blank" rel="noopener" class="btn-sm-custom">
+                            <a href="https://github.com/SakalaRahul/dhanvantri-hospital-management-system" target="_blank" rel="noopener" class="btn-sm-custom">
                                 <i class="fab fa-github"></i> View on GitHub
                             </a>
                         </div>
@@ -414,7 +416,7 @@
                                 <span class="badge">JDBC</span>
                                 <span class="badge">MySQL</span>
                             </div>
-                            <a href="https://github.com/SakalaRahul/Employee-Management-System" target="_blank" rel="noopener" class="btn-sm-custom">
+                            <a href="https://github.com/SakalaRahul/Employee_Management_System" target="_blank" rel="noopener" class="btn-sm-custom">
                                 <i class="fab fa-github"></i> View on GitHub
                             </a>
                         </div>
@@ -451,20 +453,20 @@
                         <tr>
                             <td>B.Tech (CSE)</td>
                             <td>KL University</td>
-                            <td>2022 - 2026</td>
-                            <td>8.5 CGPA</td>
+                            <td>2020 - 2024</td>
+                            <td>89%</td>
                         </tr>
                         <tr>
                             <td>Intermediate</td>
-                            <td>Sri Chaitanya Junior College</td>
-                            <td>2020 - 2022</td>
-                            <td>90%</td>
+                            <td>Narayana Junior College</td>
+                            <td>2018 - 2020</td>
+                            <td>64%</td>
                         </tr>
                         <tr>
                             <td>SSC</td>
-                            <td>School Name</td>
-                            <td>2020</td>
-                            <td>95%</td>
+                            <td>Bhashyam High School</td>
+                            <td>2018</td>
+                            <td>100%</td>
                         </tr>
                     </tbody>
                 </table>
@@ -691,6 +693,20 @@
             });
         }, { threshold: 0.15 });
         revealEls.forEach(el => io.observe(el));
+
+        // Active nav link highlighting on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const navObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    const active = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
+                    if (active) active.classList.add('active');
+                }
+            });
+        }, { rootMargin: '-40% 0px -55% 0px' });
+        sections.forEach(s => navObserver.observe(s));
     </script>
 
 </body>
